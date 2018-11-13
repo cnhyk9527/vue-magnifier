@@ -1,13 +1,15 @@
 var path = require('path')
 var webpack = require('webpack')
-const NODE_ENV = process.env.NODE_ENV;
-console.log('dev', NODE_ENV )
+// const NODE_ENV = process.env.NODE_ENV;
+// console.log('dev', NODE_ENV)
 module.exports = {
-  entry: NODE_ENV == 'development' ? './src/main.js' : './src/plugin/index.js',
+  entry:'./src/main.js',
+  // entry: './src/plugin/index.js',
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
     filename: 'build.js',
+    // filename: 'vueMagnifier.js',
     library: 'vueMagnifier',
     libraryTarget: 'umd',
     umdNamedDefine: true
@@ -20,12 +22,11 @@ module.exports = {
           'vue-style-loader',
           'css-loader'
         ],
-      },      {
+      }, {
         test: /\.vue$/,
         loader: 'vue-loader',
         options: {
-          loaders: {
-          }
+          loaders: {}
           // other vue-loader options go here
         }
       },

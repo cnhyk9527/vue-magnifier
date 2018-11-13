@@ -65,7 +65,7 @@
           let scope = 800 / 450
           this.bigLeft = -(this.moveLeft * scope)
           this.bigTop = -(this.moveTop * scope)
-          console.log('left', this.moveLeft, 'box', box[0].clientHeight, 'move', move[0].offsetHeight)
+          // console.log('left', this.moveLeft, 'box', box[0].clientHeight, 'move', move[0].offsetHeight)
         }
       }
     }

@@ -1,6 +1,6 @@
 # vue-magnifier
 
-> a magnifier of vue
+> 基于vue开发的电商放大镜组件
 
 ## Build Setup
 

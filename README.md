@@ -2,17 +2,17 @@
 
 > 基于vue开发的电商放大镜组件
 
-## Build Setup
+####安装
+``` npm i vue-magnifier ```
 
-``` bash
-# install dependencies
-npm install
+####引入
+```import vueMagnifier from 'vue-magnifier'```
 
-# serve with hot reload at localhost:8080
-npm run dev
+####组件
+``` conmponents:{vueMagnifier} ```
 
-# build for production with minification
-npm run build
-```
+####标签
+``` <vueMagnifier :small-img="img" :big-img="img"></vueMagnifier> ```
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+####参数说明
+``` small-img:'左侧小图',big-img:'右侧大图'```
